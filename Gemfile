@@ -10,13 +10,13 @@ base_path = ""
 base_path = "../" if File.basename(__dir__) == "development_app"
 require_relative "#{base_path}lib/decidim/slider/version"
 
-DECIDIM_VERSION = Decidim::Slider.decidim_version
+DECIDIM_VERSION = "~> 0.28.0"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-slider", path: "."
 
 gem "bootsnap", "~> 1.7"
-gem "faker", "~> 2.14"
+gem "faker", "~> 3.2"
 gem "rspec", "~> 3.0"
 
 group :development, :test do
